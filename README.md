@@ -1,11 +1,18 @@
-# FRVT Quality Submission — dface_001
+FRVT Quality (Quality-SIDD) submission
 
-NIST FRVT Quality (SIDD) submission package.
+Implemented quality measures:
+TotalFacesPresent, SubjectPoseYaw/Pitch/Roll, InterEyeDistance,
+EyesOpen/EyesOpen2, MouthOpen/MouthOpen2, Resolution,
+CompressionArtifacts, FaceOcclusion/FaceOcclusion2, BackgroundUniformity,
+PixelsFromEyeToLeftEdge/RightEdge/Top/Bottom,
+Overexposure/Underexposure, UnifiedQualityScore,
+EyeGlassesPresent/SunGlassesPresent
 
-- Algorithm: dface_001
-- Validation package: v3.1
-- Encrypted package: see Releases (tag v3.1)
-- SHA256 (gpg): 8f3a532550e19a68040f998d0d5db3ca6ec52bc19a71ef0326bb5b55bdd1e506
-
+Validation:
+- Platform: Ubuntu 24.04.3 LTS
+- run_validate_quality.sh completed with [SUCCESS]
+- 663 input images; 659 returned Success (0)
+- 4 stress/invalid images returned 8 (FaceDetectionError):
+  white.ppm, black.ppm, 8bit.pgm, small.ppm
 
  
